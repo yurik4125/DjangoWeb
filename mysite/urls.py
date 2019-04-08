@@ -5,7 +5,8 @@ from django.conf.urls import include, url
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('webexample/', include('webexample.urls')),
-    path('', include('mainApp.urls')),
+    path(r'admin/', admin.site.urls),
+    path(r'webexample/', include('webexample.urls')),
+    path(r'', include('mainApp.urls')),
+    path(r'news/', include('news.urls'))
 ]
