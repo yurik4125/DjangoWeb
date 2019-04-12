@@ -1,0 +1,10 @@
+{%  extends "mainApp/wrapper.html" %}
+
+{%  block content %}
+
+<h2 class="text-info">{{articles.title}}</h2>
+<h6 class="text-info">Publication : {{articles.date|date:"Y-m-d H:i"}}</h6>
+<p>{{articles.post|safe|linebreaks}}</p>
+<img src="/static/mainApp{{articles.image.url}}" class="img-thumbnail" width = "300"">
+
+{%  endblock  %}
