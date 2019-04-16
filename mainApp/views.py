@@ -7,4 +7,4 @@ def index(request):
 
 
 def contact(request):
-    return render(request, 'mainApp/basic.html', {'values': ['If you have a quetions please call me', '(819) 068-68-68', 'email@email.com']})
+    return render(request, 'mainApp/basic.html', {'values': ['If you have any quetions, please do not hesitate to call me', '(819) 068-68-68', 'email@email.com']})
